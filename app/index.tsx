@@ -7,6 +7,7 @@ export default function HomeScreen() {
   const [favorites, setFavorites] = useState<number[]>([]);
   const router = useRouter();
 
+  
   return (
     <View style={{ flex: 1 }}>
       <VenueList favorites={favorites} setFavorites={setFavorites} router={router} />
